@@ -30,13 +30,13 @@ function Digit({ value, label }: { value: number; label: string }) {
         style={{
           width: "clamp(72px, 19vw, 110px)",
           height: "clamp(72px, 19vw, 110px)",
-          background: "rgba(176,141,87,0.18)",
-          border: "1.5px solid rgba(176,141,87,0.6)",
+          background: "rgba(95,106,86,0.1)",
+          border: "1.5px solid rgba(95,106,86,0.4)",
           borderRadius: "10px",
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          boxShadow: "0 4px 20px rgba(0,0,0,0.15), inset 0 1px 0 rgba(176,141,87,0.25)",
+          boxShadow: "0 4px 20px rgba(192,139,139,0.15), inset 0 1px 0 rgba(95,106,86,0.15)",
           position: "relative",
           overflow: "hidden",
         }}
@@ -46,7 +46,7 @@ function Digit({ value, label }: { value: number; label: string }) {
             fontFamily: "'Playfair Display', serif",
             fontWeight: 700,
             fontSize: "clamp(1.9rem, 6.5vw, 3rem)",
-            color: "#FFFFFF",
+            color: "#4B5545",
             lineHeight: 1,
             position: "relative",
             zIndex: 1,
@@ -62,7 +62,7 @@ function Digit({ value, label }: { value: number; label: string }) {
           fontSize: "clamp(0.65rem, 2.4vw, 0.8rem)",
           letterSpacing: "0.18em",
           textTransform: "uppercase",
-          color: "rgba(255,255,255,0.88)",
+          color: "#5F6A56",
           marginTop: "0.5rem",
         }}
       >
@@ -83,7 +83,7 @@ export function CountdownTimer() {
   return (
     <section
       style={{
-        background: "linear-gradient(180deg, #9C6969 0%, #C08B8B 50%, #9C6969 100%)",
+        background: "linear-gradient(180deg, #C08B8B 0%, #D3A3A3 50%, #C08B8B 100%)",
         padding: "4rem 1.5rem",
         textAlign: "center",
       }}
@@ -102,7 +102,7 @@ export function CountdownTimer() {
             fontSize: "clamp(0.7rem, 2.5vw, 0.85rem)",
             letterSpacing: "0.25em",
             textTransform: "uppercase",
-            color: "rgba(255,255,255,0.85)",
+            color: "#4B5545",
             marginBottom: "0.5rem",
           }}
         >
@@ -114,7 +114,7 @@ export function CountdownTimer() {
             fontWeight: 400,
             fontStyle: "italic",
             fontSize: "clamp(1.6rem, 5vw, 2.4rem)",
-            color: "#FFFFFF",
+            color: "#4B5545",
             margin: 0,
           }}
         >
@@ -124,7 +124,7 @@ export function CountdownTimer() {
           style={{
             width: "60px",
             height: "1px",
-            background: "rgba(176,141,87,0.8)",
+            background: "rgba(95,106,86,0.5)",
             margin: "1rem auto 0",
           }}
         />
@@ -153,7 +153,7 @@ export function CountdownTimer() {
           fontFamily: "'Cormorant Garamond', serif",
           fontWeight: 400,
           fontSize: "clamp(0.85rem, 3vw, 1.1rem)",
-          color: "rgba(255,255,255,0.9)",
+          color: "#4B5545",
           letterSpacing: "0.2em",
           marginTop: "2rem",
         }}
