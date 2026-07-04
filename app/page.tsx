@@ -25,7 +25,7 @@ export default function WeddingPage() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
-            style={{ background: "#7A8471" }}
+            style={{ background: "#C08B8B" }}
           >
             <HeroSection />
             <CountdownTimer />

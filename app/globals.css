@@ -7,20 +7,23 @@
   --sage:        #7A8471;
   --sage-dark:   #5F6A56;
   --ivory:       #FBF7EF;
-  --dusty-rose:  #C08B8B;
+  --dusty-rose:       #C08B8B;
+  --dusty-rose-light: #D3A3A3;
+  --dusty-rose-dark:  #9C6969;
+  --dusty-rose-deep:  #7A5050;
   --champagne:   #D9C7A3;
   --antique-gold:#B08D57;
   --soft-taupe:  #A9998A;
   --text-dark:   #3E362E;
-  --gold-accent: #E8D9BB;
+  --gold-accent: #B08D57;
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
 
 body {
-  background-color: var(--sage);
-  color: var(--ivory);
+  background-color: var(--dusty-rose);
+  color: #FFFFFF;
   font-family: 'Montserrat', sans-serif;
   overflow-x: hidden;
 }
@@ -31,7 +34,7 @@ body {
 .font-sans      { font-family: 'Montserrat', sans-serif; }
 
 .gold-text {
-  background: linear-gradient(135deg, #E8D9BB 0%, #FBF7EF 40%, #E8D9BB 70%, #D9C7A3 100%);
+  background: linear-gradient(135deg, #B08D57 0%, #D9C7A3 40%, #B08D57 70%, #8A6C3E 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -42,7 +45,7 @@ body {
   100% { background-position:  200% center; }
 }
 .shimmer-gold {
-  background: linear-gradient(90deg, #E8D9BB 0%, #FBF7EF 40%, #E8D9BB 60%, #D9C7A3 100%);
+  background: linear-gradient(90deg, #B08D57 0%, #E4CE9A 40%, #B08D57 60%, #8A6C3E 100%);
   background-size: 200% auto;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
