@@ -3,14 +3,14 @@
 import { motion } from "framer-motion";
 import { weddingConfig } from "@/lib/wedding-config";
 
-const GOLD     = "#E8D9BB";
-const GOLD_DIM = "rgba(232,217,187,0.85)";
-const IVORY    = "#FBF7EF";
+const GOLD     = "#B08D57";
+const GOLD_DIM = "rgba(176,141,87,0.9)";
+const WHITE    = "#FFFFFF";
 
 function TimelineDot() {
   return (
     <svg width="14" height="14" viewBox="0 0 14 14" fill="none" style={{ flexShrink: 0, position: "relative", zIndex: 1 }}>
-      <circle cx="7" cy="7" r="5"   stroke={GOLD} strokeWidth="1.5" fill="rgba(232,217,187,0.25)" />
+      <circle cx="7" cy="7" r="5"   stroke={GOLD} strokeWidth="1.5" fill="rgba(176,141,87,0.3)" />
       <circle cx="7" cy="7" r="2.5" fill={GOLD} />
     </svg>
   );
@@ -18,7 +18,7 @@ function TimelineDot() {
 
 export function EventSchedule() {
   return (
-    <section style={{ background: "linear-gradient(180deg,#8A9480 0%,#7A8471 100%)", textAlign: "center" }}>
+    <section style={{ background: "linear-gradient(180deg,#D3A3A3 0%,#C08B8B 100%)", textAlign: "center" }}>
 
       <motion.div
         initial={{ opacity: 0, y: 12 }}
@@ -27,7 +27,7 @@ export function EventSchedule() {
         transition={{ duration: 0.7 }}
         style={{ padding: "3.5rem 1.5rem 2.5rem" }}
       >
-        <h2 style={{ fontFamily: "'Playfair Display',serif", fontWeight: 400, fontStyle: "italic", fontSize: "clamp(1.8rem,5vw,2.6rem)", color: IVORY, margin: 0 }}>
+        <h2 style={{ fontFamily: "'Playfair Display',serif", fontWeight: 400, fontStyle: "italic", fontSize: "clamp(1.8rem,5vw,2.6rem)", color: WHITE, margin: 0 }}>
           Order of Ceremony
         </h2>
       </motion.div>
@@ -35,7 +35,7 @@ export function EventSchedule() {
       <div style={{ maxWidth: "560px", margin: "0 auto", position: "relative", textAlign: "left", padding: "0 1.5rem" }}>
         <div style={{
           position: "absolute", left: "calc(1.5rem + 84px)", top: 0, bottom: 0, width: "1px",
-          background: `linear-gradient(to bottom,transparent,rgba(232,217,187,0.5) 10%,rgba(232,217,187,0.35) 50%,rgba(232,217,187,0.5) 90%,transparent)`,
+          background: `linear-gradient(to bottom,transparent,rgba(176,141,87,0.6) 10%,rgba(176,141,87,0.4) 50%,rgba(176,141,87,0.6) 90%,transparent)`,
           pointerEvents: "none",
         }} />
 
@@ -53,7 +53,7 @@ export function EventSchedule() {
               </span>
             </div>
             <TimelineDot />
-            <p style={{ fontFamily: "'Playfair Display',serif", fontWeight: 500, fontSize: "clamp(0.92rem,3.2vw,1.05rem)", color: IVORY, margin: 0, whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>
+            <p style={{ fontFamily: "'Playfair Display',serif", fontWeight: 500, fontSize: "clamp(0.92rem,3.2vw,1.05rem)", color: WHITE, margin: 0, whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>
               {event.title}
             </p>
           </motion.div>
@@ -67,16 +67,16 @@ export function EventSchedule() {
         transition={{ duration: 0.7, delay: 0.3 }}
         style={{ padding: "1rem 1.5rem 3.5rem", textAlign: "center" }}
       >
-        <div style={{ width: "60px", height: "1px", background: "rgba(232,217,187,0.6)", margin: "0 auto 1.4rem" }} />
+        <div style={{ width: "60px", height: "1px", background: "rgba(176,141,87,0.7)", margin: "0 auto 1.4rem" }} />
 
         <p style={{ fontFamily: "'Cormorant Garamond',serif", fontWeight: 300, fontSize: "clamp(0.75rem,2.6vw,0.88rem)", letterSpacing: "0.22em", textTransform: "uppercase", color: GOLD_DIM, margin: "0 0 0.3rem" }}>
           Venue
         </p>
         <a href={weddingConfig.wedding.googleMapsUrl} target="_blank" rel="noopener noreferrer"
-          style={{ fontFamily: "'Playfair Display',serif", fontWeight: 400, fontStyle: "italic", fontSize: "clamp(1rem,3.5vw,1.25rem)", color: IVORY, textDecoration: "none" }}>
+          style={{ fontFamily: "'Playfair Display',serif", fontWeight: 400, fontStyle: "italic", fontSize: "clamp(1rem,3.5vw,1.25rem)", color: WHITE, textDecoration: "none" }}>
           {weddingConfig.wedding.venueFullName}
         </a>
-        <p style={{ fontFamily: "'Cormorant Garamond',serif", fontWeight: 300, fontSize: "clamp(0.78rem,2.6vw,0.9rem)", color: "rgba(251,247,239,0.8)", margin: "0.3rem 0 0", letterSpacing: "0.05em" }}>
+        <p style={{ fontFamily: "'Cormorant Garamond',serif", fontWeight: 300, fontSize: "clamp(0.78rem,2.6vw,0.9rem)", color: "rgba(255,255,255,0.85)", margin: "0.3rem 0 0", letterSpacing: "0.05em" }}>
           {weddingConfig.wedding.venueAddress}
         </p>
         <a
@@ -90,14 +90,14 @@ export function EventSchedule() {
             marginTop: "1.1rem",
             padding: "7px 22px",
             borderRadius: "999px",
-            border: "1px solid rgba(232,217,187,0.7)",
-            color: IVORY,
+            border: "1px solid rgba(176,141,87,0.75)",
+            color: WHITE,
             fontFamily: "'Montserrat','Helvetica Neue',sans-serif",
             fontSize: "0.68rem",
             letterSpacing: "0.2em",
             textTransform: "uppercase",
             textDecoration: "none",
-            background: "rgba(232,217,187,0.1)",
+            background: "rgba(176,141,87,0.12)",
           }}
         >
           <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
